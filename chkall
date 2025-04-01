@@ -1,0 +1,46 @@
+spin -run -ltl spec1 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail1
+spin -run -ltl spec2 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail2
+spin -run -ltl spec3 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail3
+spin -run -ltl spec4 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail4
+spin -run -ltl spec5 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail5
+spin -run -ltl spec6 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail6
+spin -run -ltl spec7 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail7
+spin -run -ltl spec8 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail8
+spin -run -ltl spec9 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail9
+spin -run -ltl spec10 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail10
+spin -run -ltl spec11 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail11
+spin -run -ltl spec12 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail12
+spin -run -ltl spec13 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail13
+spin -run -ltl spec14 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail14
+spin -run -ltl spec15 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail15
+spin -run -ltl spec16 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail16
+spin -run -ltl spec17 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail17
+spin -run -ltl spec18 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail18
+spin -run -ltl spec19 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail19
+spin -run -ltl spec20 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail20
+spin -run -ltl spec21 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail21
+spin -run -ltl spec22 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail22
+spin -run -ltl spec23 P3SpecImpl.pml
+mv P3SpecImpl.pml.trail  P3SpecImpl.pml.trail23
