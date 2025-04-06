@@ -3,6 +3,7 @@
 // DO NOT MODIFY
 
 
+// Loads 1 into gL
 inline action_11() {
   unsigned loc1 : 7 ;
   loc1 = 1;
@@ -10,6 +11,7 @@ inline action_11() {
   gL = loc1;
 }
 
+// Increment gP by 6
 inline action_12() {
   unsigned loc1 : 7 ;
   loc1 = 6;
@@ -17,6 +19,7 @@ inline action_12() {
   gP = (gP + loc1);
 }
 
+// Set gT to 8
 inline action_13() {
   unsigned loc1 : 7 ;
   loc1 = 8;
@@ -24,6 +27,8 @@ inline action_13() {
   gT = loc1;
 }
 
+// Modifies gT
+// Modifies gL
 inline action_14() {
   unsigned loc1 : 7 ;
   loc1 = 2;
@@ -36,6 +41,7 @@ inline action_14() {
   gL = (gP + loc2);
 }
 
+// Increment gX by 5
 inline action_15() {
   unsigned loc1 : 7 ;
   loc1 = 5;
@@ -44,6 +50,7 @@ inline action_15() {
 }
 
 
+// Set gD to 6
 inline action_21() {
   unsigned loc1 : 7 ;
   loc1 = 6;
@@ -51,6 +58,7 @@ inline action_21() {
   gD = loc1;
 }
 
+// Increment gG by 2
 inline action_22() {
   unsigned loc1 : 7 ;
   loc1 = 2;
@@ -58,6 +66,7 @@ inline action_22() {
   gG = loc1;
 }
 
+// Increment gL by 8
 inline action_23() {
   unsigned loc1 : 7 ;
   loc1 = 8;
@@ -65,6 +74,8 @@ inline action_23() {
   gL = (gL + loc1);
 }
 
+// Increment gP by 5
+// Complex on gM
 inline action_24() {
   unsigned loc1 : 7 ;
   loc1 = 5;
@@ -77,6 +88,7 @@ inline action_24() {
   gM = (gM * loc2);
 }
 
+// Set gX to complex
 inline action_25() {
   unsigned loc1 : 7 ;
   if
@@ -89,6 +101,7 @@ inline action_25() {
 }
 
 
+// Increments gM by 10
 inline action_31() {
   unsigned loc1 : 7 ;
   loc1 = 10;
@@ -96,6 +109,7 @@ inline action_31() {
   gM = (gM + loc1);
 }
 
+// Add 6 to gP
 inline action_32() {
   unsigned loc1 : 7 ;
   loc1 = 6;
@@ -103,6 +117,7 @@ inline action_32() {
   gP = (gP + loc1);
 }
 
+// Set gG to 9
 inline action_33() {
   unsigned loc1 : 7 ;
   loc1 = 9;
@@ -110,6 +125,7 @@ inline action_33() {
   gG = loc1;
 }
 
+// Set gL to 6
 inline action_34() {
   unsigned loc1 : 7 ;
   loc1 = 6;
@@ -117,6 +133,7 @@ inline action_34() {
   gL = loc1;
 }
 
+// Sub 5 from gX
 inline action_35() {
   unsigned loc1 : 7 ;
   loc1 = 5;
@@ -125,6 +142,7 @@ inline action_35() {
 }
 
 
+// Set gD to 8
 inline action_41() {
   unsigned loc1 : 7 ;
   loc1 = 8;
@@ -132,6 +150,8 @@ inline action_41() {
   gD = loc1;
 }
 
+// Increment gG by 1
+// Complex on gL
 inline action_42() {
   unsigned loc1 : 7 ;
   loc1 = 1;
@@ -144,6 +164,7 @@ inline action_42() {
   gL = (gL * loc2);
 }
 
+// Set gA to 7
 inline action_43() {
   unsigned loc1 : 7 ;
   loc1 = 7;
@@ -151,6 +172,7 @@ inline action_43() {
   gA = loc1;
 }
 
+// Add 4 to gT
 inline action_44() {
   unsigned loc1 : 7 ;
   loc1 = 4;
@@ -158,6 +180,7 @@ inline action_44() {
   gT = (gT + loc1);
 }
 
+// Set gN to 2
 inline action_45() {
   unsigned loc1 : 7 ;
   loc1 = 2;
@@ -165,6 +188,7 @@ inline action_45() {
   gN = loc1;
 }
 
+// Sub 4 from gN
 inline action_46() {
   unsigned loc1 : 7 ;
   loc1 = 4;
@@ -173,6 +197,8 @@ inline action_46() {
 }
 
 
+// Add 3 to gL
+// Complex on gP
 inline action_51() {
   unsigned loc1 : 7 ;
   loc1 = 3;
@@ -185,6 +211,7 @@ inline action_51() {
   gP = (gP * loc2);
 }
 
+// Add 10 to gD
 inline action_52() {
   unsigned loc1 : 7 ;
   loc1 = 10;
@@ -192,6 +219,7 @@ inline action_52() {
   gD = (gD + loc1);
 }
 
+// Set gV to 10
 inline action_53() {
   unsigned loc1 : 7 ;
   loc1 = 10;
@@ -199,6 +227,7 @@ inline action_53() {
   gV = loc1;
 }
 
+// Set gT to 9
 inline action_54() {
   unsigned loc1 : 7 ;
   loc1 = 9;
@@ -206,6 +235,7 @@ inline action_54() {
   gT = loc1;
 }
 
+// Set gN to 4
 inline action_55() {
   unsigned loc1 : 7 ;
   loc1 = 4;
@@ -213,6 +243,7 @@ inline action_55() {
   gN = loc1;
 }
 
+// Increment gN by 4
 inline action_56() {
   unsigned loc1 : 7 ;
   loc1 = 4;

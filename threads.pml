@@ -12,6 +12,7 @@
 //     to check for the correct final values of the global variables.
 
 
+// ACTIONS 10, 12, 13, 14, 15
 proctype Thread1() {
   printf( "Thread1 Running\n" );
 
@@ -26,6 +27,7 @@ proctype Thread1() {
 }
 
 
+// ACTIONS 21,22,23,24,25
 proctype Thread2() {
   printf( "Thread2 Running\n" );
 
@@ -37,6 +39,7 @@ proctype Thread2() {
 }
 
 
+// ACTIONS 31,32,33,34,35
 proctype Thread3() {
   printf( "Thread3 Running\n" );
 
@@ -51,6 +54,7 @@ proctype Thread3() {
 }
 
 
+// ACTIONS 41,42,43,44,45,46
 proctype Thread4() {
   printf( "Thread4 Running\n" );
 
@@ -66,6 +70,7 @@ proctype Thread4() {
 }
 
 
+// ACTIONS 51,52,53,54,55,56
 proctype Thread5() {
   printf( "Thread5 Running\n" );
 
