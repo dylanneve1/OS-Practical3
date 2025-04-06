@@ -16,9 +16,9 @@
 proctype Thread1() {
   printf( "Thread1 Running\n" );
 
-  atomic { action_11(); }
+  action_11();
   atomic { action_12(); }
-  atomic { action_13(); }
+  action_13();
   atomic { action_14(); }
   printf("Waiting for (gX == 1)\n");
   ((gX == 1)) ;
@@ -31,11 +31,11 @@ proctype Thread1() {
 proctype Thread2() {
   printf( "Thread2 Running\n" );
 
-  atomic { action_21(); }
+  action_21();
   atomic { action_22(); }
   atomic { action_23(); }
   atomic { action_24(); }
-  atomic { action_25(); }
+  action_25();
 }
 
 
@@ -45,8 +45,8 @@ proctype Thread3() {
 
   atomic { action_31(); }
   atomic { action_32(); }
-  atomic { action_33(); }
-  atomic { action_34(); }
+  action_33();
+  action_34();
   printf("Waiting for (gX == 6)\n");
   ((gX == 6)) ;
   atomic { action_35(); }
@@ -58,12 +58,12 @@ proctype Thread3() {
 proctype Thread4() {
   printf( "Thread4 Running\n" );
 
-  atomic { action_41(); }
+  action_41();
   atomic { action_42(); }
   // Definite, doesn't need atomic
   action_43();
   atomic { action_44(); }
-  atomic { action_45(); }
+  action_45();
   printf("Waiting for (gN > 3)\n");
   ((gN > 3)) ;
   atomic { action_46(); }
@@ -79,8 +79,8 @@ proctype Thread5() {
   atomic { action_52(); }
   // Definite, doesn't need atomic
   action_53();
-  atomic { action_54(); }
-  atomic { action_55(); }
+  action_54();
+  action_55();
   printf("Waiting for (gN < 3)\n");
   ((gN < 3)) ;
   atomic { action_56(); }
