@@ -16,13 +16,13 @@
 proctype Thread1() {
   printf( "Thread1 Running\n" );
 
-  action_11();
-  action_12();
-  action_13();
-  action_14();
+  atomic { action_11(); }
+  atomic { action_12(); }
+  atomic { action_13(); }
+  atomic { action_14(); }
   printf("Waiting for (gX == 1)\n");
   ((gX == 1)) ;
-  action_15();
+  atomic { action_15(); }
 
 }
 
@@ -31,11 +31,11 @@ proctype Thread1() {
 proctype Thread2() {
   printf( "Thread2 Running\n" );
 
-  action_21();
-  action_22();
-  action_23();
-  action_24();
-  action_25();
+  atomic { action_21(); }
+  atomic { action_22(); }
+  atomic { action_23(); }
+  atomic { action_24(); }
+  atomic { action_25(); }
 }
 
 
@@ -43,13 +43,13 @@ proctype Thread2() {
 proctype Thread3() {
   printf( "Thread3 Running\n" );
 
-  action_31();
-  action_32();
-  action_33();
-  action_34();
+  atomic { action_31(); }
+  atomic { action_32(); }
+  atomic { action_33(); }
+  atomic { action_34(); }
   printf("Waiting for (gX == 6)\n");
   ((gX == 6)) ;
-  action_35();
+  atomic { action_35(); }
 
 }
 
@@ -58,14 +58,15 @@ proctype Thread3() {
 proctype Thread4() {
   printf( "Thread4 Running\n" );
 
-  action_41();
-  action_42();
+  atomic { action_41(); }
+  atomic { action_42(); }
+  // Definite, doesn't need atomic
   action_43();
-  action_44();
-  action_45();
+  atomic { action_44(); }
+  atomic { action_45(); }
   printf("Waiting for (gN > 3)\n");
   ((gN > 3)) ;
-  action_46();
+  atomic { action_46(); }
 
 }
 
@@ -74,29 +75,38 @@ proctype Thread4() {
 proctype Thread5() {
   printf( "Thread5 Running\n" );
 
-  action_51();
-  action_52();
+  atomic { action_51(); }
+  atomic { action_52(); }
+  // Definite, doesn't need atomic
   action_53();
-  action_54();
-  action_55();
+  atomic { action_54(); }
+  atomic { action_55(); }
   printf("Waiting for (gN < 3)\n");
   ((gN < 3)) ;
-  action_56();
+  atomic { action_56(); }
 
 }
 
 
 inline endassertions(){
   printf("End Assertions\n")
-  assert(gN == 0);
-  assert(gA == 0);
-  assert(gV == 0);
-  assert(gD == 0);
-  assert(gT == 0);
-  assert(gG == 0);
-  assert(gL == 0);
-  assert(gP == 0);
-  assert(gM == 0);
-  assert(gX == 0);
+  assert(gA == 7);              // DEFINITE: Set by action 43
+  assert(gV == 10);             // DEFINITE: Set by action 53
+  assert(gD == 6 || gD == 8 || gD == 16 || gD == 18); // DEFINITE
+  assert(gP == 17 || gP == 35 || gP == 32 || gP == 50 || gP == 53 || gP == 68); // Definite
+  assert(gM == 60 || gM == 10);  // DEFINITE: either action 31 or 24 runs first
+  assert(gX == 1 || gX == 6);   // DEFINITE: Set by action 25
+  assert(gN == 2 || gN == 4); // DEFINITE
+  assert(gT == 2 || gT == 4 || gT == 6 || gT == 8 || gT == 9 || gT == 10 || 
+    gT == 13 || gT == 18 || gT == 20 || gT == 22 || gT == 24);
+  assert(gG == 2 || gG == 3 || gG == 9 || gG == 10);
+  assert(gL == 6 || gL == 9 || gL == 12 || gL == 14 || gL == 15 || gL == 17 ||
+    gL == 18 || gL == 20 || gL == 22 || gL == 23 || gL == 25 || gL == 26 ||
+    gL == 27 || gL == 28 || gL == 30 || gL == 31 || gL == 33 || gL == 34 ||
+    gL == 40 || gL == 42 || gL == 44 || gL == 45 || gL == 47 || gL == 48 ||
+    gL == 50 || gL == 52 || gL == 54 || gL == 55|| gL == 57 || gL == 58 ||
+    gL == 60 || gL == 63 || gL == 66 || gL == 78 || gL == 80 || gL == 84 ||
+    gL == 88 || gL == 90 || gL == 96 || gL == 116 || gL == 120 || gL == 124 ||
+    gL == 126 || gL == 132 || gL == 156);
 }
 

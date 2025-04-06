@@ -27,7 +27,7 @@ inline action_13() {
   gT = loc1;
 }
 
-// Modifies gT
+// Modifies gT * 2
 // Modifies gL
 inline action_14() {
   unsigned loc1 : 7 ;
@@ -88,7 +88,7 @@ inline action_24() {
   gM = (gM * loc2);
 }
 
-// Set gX to complex
+// Set gX to either 1 or 6
 inline action_25() {
   unsigned loc1 : 7 ;
   if
@@ -199,6 +199,7 @@ inline action_46() {
 
 // Add 3 to gL
 // Complex on gP
+// gP multiplied by 4
 inline action_51() {
   unsigned loc1 : 7 ;
   loc1 = 3;
