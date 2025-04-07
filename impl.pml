@@ -4,9 +4,9 @@ int d = 0;
 int g ;
 int h ;
 int m ;
-int s ;
+int s = 0;
 int t ;
-int v ;
+int v = 15;
 
 
 inline update_a() {
@@ -15,12 +15,30 @@ inline update_a() {
   :: a == 11 -> a = 9;
   :: a == 9 -> a = 7;
   :: a == 7 -> a = 3;
+  :: a == 3 --> skip;
   fi;
 }
 
 inline update_d() {
   if
   :: d == 0 -> d = 9;
+  :: d == 9 -> skip;
+  fi;
+}
+
+inline update_s() {
+  if
+  :: s == 0 -> s = 7;
+  :: s == 7 -> skip;
+  fi;
+}
+
+inline update_v() {
+  if
+  :: v == 15 -> v = 14;
+  :: v == 14 -> v = 8;
+  :: v == 8 -> v = 9;
+  :: v == 9 -> skip;
   fi;
 }
 
@@ -29,6 +47,8 @@ init {
   do
   :: update_a();
   :: update_d();
+  :: update_v();
+  :: update_s();
   od;
 }
 
