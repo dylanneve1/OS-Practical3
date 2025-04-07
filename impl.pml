@@ -15,21 +15,18 @@ inline update_a() {
   :: a == 11 -> a = 9;
   :: a == 9 -> a = 7;
   :: a == 7 -> a = 3;
-  :: a == 3 --> skip;
   fi;
 }
 
 inline update_d() {
   if
   :: d == 0 -> d = 9;
-  :: d == 9 -> skip;
   fi;
 }
 
 inline update_s() {
   if
   :: s == 0 -> s = 7;
-  :: s == 7 -> skip;
   fi;
 }
 
@@ -38,7 +35,6 @@ inline update_v() {
   :: v == 15 -> v = 14;
   :: v == 14 -> v = 8;
   :: v == 8 -> v = 9;
-  :: v == 9 -> skip;
   fi;
 }
 
