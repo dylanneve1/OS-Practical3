@@ -1,8 +1,8 @@
-ltl spec1 { ((d == 0) U (d == 9))}
-ltl spec2 { ((a == 5) U (a == 11))}
-ltl spec3 { (<>((a == 11)) U <>((a == 9)))}
-ltl spec4 { (<>((a == 9)) U <>((a == 7)))}
-ltl spec5 { (<>((a == 7)) U <>((a == 3)))}
+ltl spec1 { ((d == 0) U (d == 9))} // Done
+ltl spec2 { ((a == 5) U (a == 11))} // Done
+ltl spec3 { (<>((a == 11)) U <>((a == 9)))} // Done
+ltl spec4 { (<>((a == 9)) U <>((a == 7)))} // Done
+ltl spec5 { (<>((a == 7)) U <>((a == 3)))} // Done
 ltl spec6 { (v == 15)}
 ltl spec7 { <>((v == 14))}
 ltl spec8 { ((a > 0) U (v == 8))}
