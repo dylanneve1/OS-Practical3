@@ -15,7 +15,7 @@ ltl spec14 { [](((h == 11) -> <>((h == 5))))}                     // PASS
 ltl spec15 { <>((g == 11))}
 ltl spec16 { (t == 5)}                                            // PASS
 ltl spec17 { (b == 3)}                                            // PASS
-ltl spec18 { <>((b == 3))}
+ltl spec18 { <>((b == 3))}                                        // PASS
 ltl spec19 { ((b == 0) U (b == 3))}
 ltl spec20 { ((b == 0) U []((b == 3)))}
 ltl spec21 { ((m == 3) U ((m == 15) || (m == 14)))}
