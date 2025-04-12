@@ -11,6 +11,7 @@ int steps = 0;
 
 #define MAX_STEPS 20
 
+// Update Global Variable a
 inline update_a() {
   if
   :: a == 5 -> a = 11;
@@ -21,6 +22,7 @@ inline update_a() {
   fi;
 }
 
+// Update Global Variable d
 inline update_d() {
   if
   :: d == 0 -> d = 9;
@@ -28,6 +30,7 @@ inline update_d() {
   fi;
 }
 
+// Update Global Variable s
 inline update_s() {
   if
   :: s == 0 -> s = 7;
@@ -35,6 +38,7 @@ inline update_s() {
   fi;
 }
 
+// Update Global Variable v
 inline update_v() {
   if
   :: v == 15 -> v = 14;
@@ -44,6 +48,7 @@ inline update_v() {
   fi;
 }
 
+// Update Global Variable h
 inline update_h() {
   if
   :: h == 5 -> h = 11;
@@ -52,6 +57,7 @@ inline update_h() {
   fi;
 }
 
+// Update Global Variable g
 inline update_g() {
   if
   :: g == 0 -> g = 11;
@@ -59,6 +65,7 @@ inline update_g() {
   fi;
 }
 
+// Update Global Variable m
 inline update_m() {
   if
   :: m == 3 -> m = 14;
@@ -69,6 +76,7 @@ inline update_m() {
 
 init {
   printf("P3p2\n");
+  // Main loop for 20 steps
   do
   :: (steps < MAX_STEPS) ->
       update_a();
@@ -82,6 +90,7 @@ init {
   :: else -> break;
   od;
 
+  // Update h forever for spec 13
   do
   :: update_h();
   od;
