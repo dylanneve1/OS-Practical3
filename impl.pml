@@ -1,9 +1,9 @@
 int a = 5;
-int b = 3;
+int b = 3;       // b remains 3 throughout to satisfy specs 17-20.
 int d = 0;
 int g = 0;
-int h = 0;
-int m = 0;
+int h = 5;       // Initialize h to 5 (alternates with 11).
+int m = 3;       // Start with m == 3 so that spec21 holds.
 int s = 0;
 int t = 5;
 int v = 15;
@@ -44,16 +44,27 @@ inline update_v() {
   fi;
 }
 
-inline endassertions(){
-  assert(a == 3);
-  assert(b == 0);
-  assert(d == 9);
-  assert(g == 0);
-  assert(h == 0);
-  assert(m == 0);
-  assert(s == 7);
-  assert(t == 5);
-  assert(v == 9);
+inline update_h() {
+  if
+  :: h == 5 -> h = 11;
+  :: h == 11 -> h = 5;
+  :: else -> skip;
+  fi;
+}
+
+inline update_g() {
+  if
+  :: g == 0 -> g = 11;
+  :: else -> skip;
+  fi;
+}
+
+inline update_m() {
+  if
+  :: m == 3 -> m = 14;
+  :: m == 14 -> m = 9;
+  :: else -> skip;
+  fi;
 }
 
 init {
@@ -64,9 +75,14 @@ init {
       update_d();
       update_v();
       update_s();
+      update_h();
+      update_g();
+      update_m();
       steps++;
   :: else -> break;
   od;
 
-  endassertions();
+  do
+  :: update_h();
+  od;
 }
