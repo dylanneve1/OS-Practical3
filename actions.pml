@@ -110,7 +110,7 @@ inline action_25() {
   gX = loc1;
 }
 
-// ACTION 32
+// ACTION 31
 // - Increments gM by 10
 inline action_31() {
   unsigned loc1 : 7 ;

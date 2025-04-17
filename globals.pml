@@ -4,7 +4,7 @@ int gA ;
 // Set 6: Action 21
 // Set 8: Action 41
 // Add 10: Action 52
-// MODIEDIED BY
+// MODIFIED BY
 // THREAD1 - NO
 // THREAD2 - YES
 // THREAD3 - NO
@@ -20,7 +20,7 @@ int gD ;
 // chance 9 + 1 = 10
 // chance 9 + 2 = 11
 // chance 9 + 1 + 2 = 12
-// MODIEDIED BY
+// MODIFIED BY
 // THREAD1 - NO
 // THREAD2 - YES
 // THREAD3 - YES
@@ -34,7 +34,7 @@ int gG ;
 // Set 6: Action 34
 // Set C: Action 42
 // Add 3: Action 51
-// MODIEDIED BY
+// MODIFIED BY
 // THREAD1 - YES
 // THREAD2 - YES
 // THREAD3 - YES
@@ -44,7 +44,7 @@ int gL ;
 
 // Set C: Action 24
 // Add 10: Action 31
-// MODIEDIED BY
+// MODIFIED BY
 // THREAD1 - NO
 // THREAD2 - YES
 // THREAD3 - YES
@@ -60,7 +60,7 @@ int gM ;
 // set 4, add 2, sub 4, add 4 = 6
 // set 4, add 2, add 4 = 10
 // set 4, sub 4, add 4 = 4
-// MODIEDIED BY
+// MODIFIED BY
 // THREAD1 - NO
 // THREAD2 - NO
 // THREAD3 - NO
@@ -77,7 +77,7 @@ int gN ;
 // Potentially add 6 + 6 and then multiply by 4 = 12 * 4 = 48, then add 5 + 48 = 53
 // Potentially add 6 + 6 + 5 and then multiply by 4 = 17 * 4 = 68
 // Can be 17, 35, 32, 50, 53, 68
-// MODIEDIED BY
+// MODIFIED BY
 // THREAD1 - YES
 // THREAD2 - YES
 // THREAD3 - YES
@@ -98,7 +98,7 @@ int gP ;
 // chance set 8, set 9, add 4, mul 2 = 26
 // chance set 8, add 4, set 9, mul 2 = 18
 
-// MODIEDIED BY
+// MODIFIED BY
 // THREAD1 - YES
 // THREAD2 - NO
 // THREAD3 - NO
@@ -107,7 +107,8 @@ int gP ;
 int gT ;
 
 // Set 10: Action 53
-// MODIEDIED BY
+// MODIFIED BY
+// THREAD1 - NO
 // THREAD1 - NO
 // THREAD2 - NO
 // THREAD3 - NO
@@ -118,7 +119,7 @@ int gV ;
 // Add 5: Action 15
 // Set C: Action 25
 // Sub 5: Action 35
-// MODIEDIED BY
+// MODIFIED BY
 // THREAD1 - YES
 // THREAD2 - YES
 // THREAD3 - YES
