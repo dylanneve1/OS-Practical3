@@ -16,8 +16,8 @@ init {
     printf("All threads done\n");
     #include "showglobals.pml" 
 
-    #ifdef ASSERT 
+    //#ifdef ASSERT 
        endassertions();
-    #endif
+    //#endif
 }
 
