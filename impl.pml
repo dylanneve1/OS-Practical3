@@ -1,9 +1,9 @@
 int a = 5;
-int b = 3;       // b remains 3 throughout to satisfy specs 17-20.
+int b = 3;
 int d = 0;
 int g = 0;
-int h = 5;       // Initialize h to 5 (alternates with 11).
-int m = 3;       // Start with m == 3 so that spec21 holds.
+int h = 5;
+int m = 3;
 int s = 0;
 int t = 5;
 int v = 15;
